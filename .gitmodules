@@ -1,0 +1,3 @@
+[submodule "cnthd"]
+	path = cnthd
+	url = https://github.com/tak0kada/cnthd.git
