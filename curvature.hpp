@@ -1,3 +1,5 @@
+#pragma once
+
 #include <array>
 #include <vector>
 // #include <iostream>
@@ -24,7 +26,7 @@ std::pair<std::vector<double>, std::vector<double>> curvature(const cnthd::Mesh&
         face_area[fi] = mesh.face[fi].area();
     }
 
-#pragma openmp parallel for
+#pragma omp parallel for
     for (std::size_t vi = 0; vi < mesh.nV; ++vi)
     {
         std::vector<cnthd::HalfEdge*> hes;
