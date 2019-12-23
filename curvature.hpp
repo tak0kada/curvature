@@ -7,7 +7,7 @@
 #include <cmath>
 #include <boost/math/constants/constants.hpp>
 #ifdef _OPENMP
-#include <omp.h>
+    #include <omp.h>
 #endif
 #include "cnthd/mesh.hpp"
 
