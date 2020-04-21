@@ -15,7 +15,7 @@ constexpr double PI = boost::math::constants::pi<double>();
 
 // MEYER, Mark, et al. Discrete differential-geometry operators for triangulated 2-manifolds. In: Visualization and mathematics III. Springer, Berlin, Heidelberg, 2003. p. 35-57.
 // std::pair<GaussianCurvature, MeanCurvature>
-std::pair<std::vector<double>, std::vector<double>> curvature(const cnthd::Mesh& mesh)
+inline std::pair<std::vector<double>, std::vector<double>> curvature(const cnthd::Mesh& mesh)
 {
     std::vector<double> K(mesh.nV);
     std::vector<double> H(mesh.nV);
